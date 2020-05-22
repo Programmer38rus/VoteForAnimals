@@ -17,7 +17,9 @@ h3 {
 img {
     width: 100%;
 }
-
+#progBars {
+    display: none;
+}
 #textProgress {
     display: flex;
     flex-direction: column;
@@ -29,4 +31,10 @@ img {
 .progress {
     margin-bottom: 12px;
     height: 70px;
+};
+
+.progress-bar {
+    color: black;
+    font-weight: 600;
+    font-size: 30px;
 }
