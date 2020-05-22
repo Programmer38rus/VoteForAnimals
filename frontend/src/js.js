@@ -1,7 +1,11 @@
 const btnShow = document.querySelector("#btnShow");
+const btnDog = document.querySelector("#btnDog");
+const btnCat = document.querySelector("#btnCat");
+const btnParrots = document.querySelector("#btnParrot");
 
 
 const url = new URL("https://sf-pyw.mosyag.in/sse/vote/stats");
+const urlDog = "https://sf-pyw.mosyag.in/sse/vote/dogs"
 
 const ES = new EventSource(url);
 
@@ -62,4 +66,20 @@ btnShow.addEventListener("click", function () {
     const showerProgress = document.querySelector("#showerProgress");
     progressBars.style.cssText = "display: flex";
     showerProgress.style.cssText = "display: none";
+});
+
+btnDog.addEventListener("click", function() {
+    fetch("https://sf-pyw.mosyag.in/sse/vote/dogs", {
+        method: "post"
+    })
+});
+btnCat.addEventListener("click", function() {
+    fetch("https://sf-pyw.mosyag.in/sse/vote/cats", {
+        method: "post"
+    })
+});
+btnParrots.addEventListener("click", function() {
+    fetch("https://sf-pyw.mosyag.in/sse/vote/parrots", {
+        method: "post"
+    })
 });
