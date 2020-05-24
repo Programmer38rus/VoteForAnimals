@@ -2,7 +2,7 @@ import sqlalchemy as sa
 
 from app.db import metadata, vote_results
 
-
+#
 if __name__ == "__main__":
     engine = sa.create_engine('sqlite:///my_db.sqlite')
     metadata.create_all(engine)

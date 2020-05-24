@@ -4,10 +4,15 @@ const btnCat = document.querySelector("#btnCat");
 const btnParrots = document.querySelector("#btnParrot");
 
 
-const url = new URL("https://sf-pyw.mosyag.in/sse/vote/stats");
-const urlDog = "https://sf-pyw.mosyag.in/sse/vote/dogs"
+const url = new URL("http://localhost:9090/vote/stats");
 
-const ES = new EventSource(url);
+const header = new Headers({
+    'Access-Control-Allow-Credentials': true,
+    'Access-Control-Allow-Origin': '*'
+})
+
+
+const ES = new EventSource(url, header);
 
 
 
@@ -18,7 +23,7 @@ function spliter(string) {
     let newString = ""
 
     for (i in string) {
-        newString += string[i].replace("{", " ").replace("}", " ").replace("\"", " ").replace(" ", "").replace(",", ":");
+        newString += string[i].replace("{", " ").replace("}", " ").replace("\'", " ").replace(" ", "").replace(",", ":");
     };
 
     newString = newString.split(":");
@@ -45,6 +50,8 @@ ES.addEventListener("message", function (message) {
 
     data = spliter(message.data);
 
+
+
     const sum = data["dogs"] + data["cats"] + data["parrots"]
 
 
@@ -67,19 +74,18 @@ btnShow.addEventListener("click", function () {
     progressBars.style.cssText = "display: flex";
     showerProgress.style.cssText = "display: none";
 });
-
 btnDog.addEventListener("click", function() {
-    fetch("https://sf-pyw.mosyag.in/sse/vote/dogs", {
+    fetch("http://localhost:9090/vote/dogs", {
         method: "post"
     })
 });
 btnCat.addEventListener("click", function() {
-    fetch("https://sf-pyw.mosyag.in/sse/vote/cats", {
+    fetch("http://localhost:9090/vote/cats", {
         method: "post"
     })
 });
 btnParrots.addEventListener("click", function() {
-    fetch("https://sf-pyw.mosyag.in/sse/vote/parrots", {
+    fetch("http://localhost:9090/vote/parrots", {
         method: "post"
     })
 });

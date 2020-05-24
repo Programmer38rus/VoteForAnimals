@@ -1,6 +1,10 @@
 import time
 import bottle
 
+from scripts.increase_cats import add_animal_vote
+# from scripts.list_results import results
+from scripts.list_results import results
+
 
 def create_app():
     app = bottle.Bottle()
@@ -15,6 +19,28 @@ def create_app():
 
 app = create_app()
 
+@app.route("/vote/<animal>", method="POST")
+def start(animal):
+    print(animal)
+
+    return add_animal_vote(animal)
+
+# results2 = results()
+# print(results2)
+
+@app.route('/vote/stats')
+def stats_spammer():
+    bottle.response.content_type = "text/event-stream"
+    bottle.response.cache_control = "no-cache"
+    bottle.response.headers['Access-Control-Allow-Origin'] = '*'
+
+
+    # print(results2)
+    while True:
+        vote_stat = results()
+
+        yield 'data: %s\n\n' % vote_stat
+        time.sleep(2)
 
 @app.route('/words')
 def word_spammer():
@@ -24,6 +50,6 @@ def word_spammer():
 
     words = ['one', 'two', 'three', 'four', 'five', 'six', 'seven']
     for word in words:
-        yield 'data: %s\n\n' % word
+        yield "data: %s\n\n" % word
         time.sleep(2)
 
