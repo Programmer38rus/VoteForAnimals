@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="my_db" uuid="0ce94e0b-d881-4892-9555-f3f0ba73f39c">
+    <data-source source="LOCAL" name="my_db" uuid="94ce035e-a829-4302-b28c-f0c3f3c9c2e4">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:F:\PROGRAMING\Repositories\VoteForAnimals\backend\app\my_db.sqlite</jdbc-url>
+      <jdbc-url>jdbc:sqlite:F:\PROGRAMING\Repositories\VoteForAnimals\backend\scripts\my_db.sqlite</jdbc-url>
       <libraries>
         <library>
           <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.25.1/license.txt</url>
@@ -15,11 +15,11 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="my_db [2]" uuid="bf42190f-e7e5-4e6e-9258-a309f19a8180">
+    <data-source source="LOCAL" name="my_db [2]" uuid="c905ea4c-238e-40ab-8aba-f28cc19076fd">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:F:\PROGRAMING\Repositories\VoteForAnimals\backend\my_db.sqlite</jdbc-url>
+      <jdbc-url>jdbc:sqlite:F:\PROGRAMING\Repositories\VoteForAnimals\My server\backend\scripts\my_db.sqlite</jdbc-url>
       <libraries>
         <library>
           <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.25.1/license.txt</url>
