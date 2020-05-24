@@ -18,11 +18,11 @@ def add_animal_vote(animal):
 
 
 
-    print(animal, "это из increase_cat", engine)
+
     with engine.begin() as connection:
         select = vote_results.select().where(vote_results.c.name == animal)
         results = connection.execute(select)
-        print(results, select)
+
         id, _, votes = results.fetchone()
 
         new_votes = votes + 1

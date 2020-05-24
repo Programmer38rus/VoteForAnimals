@@ -21,8 +21,7 @@ app = create_app()
 
 @app.route("/vote/<animal>", method="POST")
 def start(animal):
-
-    return add_animal_vote(animal)
+    add_animal_vote(animal)
 
 
 @app.route('/vote/stats')
