@@ -5,7 +5,7 @@ from app.db import vote_results
 
 # if __name__ == "__main__":
 def results():
-    engine = sa.create_engine("sqlite:///scripts/my_db.sqlite")
+    engine = sa.create_engine("sqlite:///my_db.sqlite")
     dict = {}
     with engine.begin() as connection:
         select = vote_results.select()

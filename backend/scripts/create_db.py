@@ -4,15 +4,16 @@ from app.db import metadata, vote_results
 
 #
 # if __name__ == "__main__":
+def create():
+    engine = sa.create_engine('sqlite:///my_db.sqlite')
+    metadata.create_all(engine)
 
-engine = sa.create_engine('sqlite:///my_db.sqlite')
-metadata.create_all(engine)
-
-with engine.begin() as connection:
-    for i, animal in enumerate(['cats', 'dogs', 'parrots'], start=1):
-        statement = vote_results.insert().values(
-            id=i,
-            name=animal,
-            votes=0
-        )
-        connection.execute(statement)
+    with engine.begin() as connection:
+        for i, animal in enumerate(['cats', 'dogs', 'parrots'], start=1):
+            statement = vote_results.insert().values(
+                id=i,
+                name=animal,
+                votes=0
+            )
+            connection.execute(statement)
+    print("\n********************************\n********* БАЗА СОЗДАНА *********\n********************************\n  ")

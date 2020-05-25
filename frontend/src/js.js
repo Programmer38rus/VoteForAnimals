@@ -52,18 +52,20 @@ ES.addEventListener("message", function (message) {
 
 
 
-    const sum = data["dogs"] + data["cats"] + data["parrots"]
+    let sum = data["dogs"] + data["cats"] + data["parrots"]
+    if (sum != 0) {
 
 
-    progressDog.style.cssText =`width: ${data["dogs"]*100/sum}%`;
-    progressDog.innerHTML = `${Math.floor(data["dogs"]*100/sum)}%`
+        console.log(sum, typeof (sum))
+        progressDog.style.cssText = `width: ${data["dogs"] * 100 / sum}%`;
+        progressDog.innerHTML = `${Math.floor(data["dogs"] * 100 / sum)}%`
 
-    progressCat.style.cssText =`width: ${data["cats"]*100/sum}%`;
-    progressCat.innerHTML = `${Math.floor(data["cats"]*100/sum)}%`
+        progressCat.style.cssText = `width: ${data["cats"] * 100 / sum}%`;
+        progressCat.innerHTML = `${Math.floor(data["cats"] * 100 / sum)}%`
 
-    progressParrots.style.cssText =`width: ${data["parrots"]*100/sum}%`;
-    progressParrots.innerHTML = `${Math.floor(data["parrots"]*100/sum)}%`
-
+        progressParrots.style.cssText = `width: ${data["parrots"] * 100 / sum}%`;
+        progressParrots.innerHTML = `${Math.floor(data["parrots"] * 100 / sum)}%`
+    }
 
 
 });
