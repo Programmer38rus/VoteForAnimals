@@ -37,6 +37,9 @@ def stats_spammer():
         time.sleep(2)
 
 @app.route("/")
+"""
+Добавляем куки
+"""
 def add_cookies():
     if bottle.request.get_cookie("visited"):
         return {
