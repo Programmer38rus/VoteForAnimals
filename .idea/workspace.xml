@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c07637d2-db26-426c-8a21-b0365c1eb844" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/VoteForAnimals.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/VoteForAnimals.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/scripts/create_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/scripts/create_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/scripts/list_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/scripts/list_results.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/scripts/my_db.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/backend/my_db.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/js.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.idea/backend.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/my_db.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/backend/my_db.sqlite" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,12 +56,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.stylelint" value="C:/Program Files/nodejs/node" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.stylelint" value="" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -81,6 +113,9 @@
       <workItem from="1590318909508" duration="94000" />
       <workItem from="1590319636935" duration="13000" />
       <workItem from="1590368735831" duration="3459000" />
+      <workItem from="1591077510009" duration="104000" />
+      <workItem from="1591077629091" duration="3398000" />
+      <workItem from="1591146198732" duration="341000" />
     </task>
     <task id="LOCAL-00001" summary="Сломал">
       <created>1590318930342</created>
@@ -95,46 +130,78 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Сломал" />
     <option name="LAST_COMMIT_MESSAGE" value="Сломал" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="845" y="383" key="#Notifications" timestamp="1591077770307">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="845" y="383" key="#Notifications/0.0.1920.1040/-1280.23.1280.984@0.0.1920.1040" timestamp="1591077770307" />
     <state x="679" y="409" key="#Stylelint" timestamp="1590369403390">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="679" y="409" key="#Stylelint/0.0.1920.1040/-1280.23.1280.984@0.0.1920.1040" timestamp="1590369403390" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591077869839">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1280.23.1280.984@0.0.1920.1040" timestamp="1591077869839" />
     <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1590318929449">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040/-1280.11.1280.984@0.0.1920.1040" timestamp="1590318929449" />
-    <state x="699" y="275" key="FileChooserDialogImpl" timestamp="1590368909045">
+    <state x="699" y="275" key="FileChooserDialogImpl" timestamp="1591080272294">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="699" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1280.23.1280.984@0.0.1920.1040" timestamp="1590368909045" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1590319002643">
+    <state x="699" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1280.23.1280.984@0.0.1920.1040" timestamp="1591080272294" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1591079790081">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1280.11.1280.984@0.0.1920.1040" timestamp="1590319002643" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1590319002642">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1280.23.1280.984@0.0.1920.1040" timestamp="1591079790081" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1591079790081">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1280.11.1280.984@0.0.1920.1040" timestamp="1590319002642" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1590319002642">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1280.23.1280.984@0.0.1920.1040" timestamp="1591079790081" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1591079790081">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1280.11.1280.984@0.0.1920.1040" timestamp="1590319002642" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1590319002643">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1280.23.1280.984@0.0.1920.1040" timestamp="1591079790081" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1591079790081">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1280.11.1280.984@0.0.1920.1040" timestamp="1590319002643" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1280.23.1280.984@0.0.1920.1040" timestamp="1591079790081" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1591077763251">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040/-1280.23.1280.984@0.0.1920.1040" timestamp="1591077763251" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1591077747498">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1280.23.1280.984@0.0.1920.1040" timestamp="1591077747498" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1590318935883">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1280.11.1280.984@0.0.1920.1040" timestamp="1590318935883" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/VoteForAnimals$main.coverage" NAME="main Coverage Results" MODIFIED="1590318962622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
+    <SUITE FILE_PATH="coverage/VoteForAnimals$main.coverage" NAME="main Coverage Results" MODIFIED="1591079790061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
   </component>
 </project>

@@ -1,6 +1,6 @@
 import time
 import bottle
-
+import JSON
 from scripts.increase_cats import add_animal_vote
 
 from scripts.list_results import results
@@ -30,13 +30,24 @@ def stats_spammer():
     bottle.response.cache_control = "no-cache"
     bottle.response.headers['Access-Control-Allow-Origin'] = '*'
 
-
-
     while True:
         vote_stat = results()
 
         yield 'data: %s\n\n' % vote_stat
         time.sleep(2)
+
+@app.route("/")
+def add_cookies():
+    if bottle.request.get_cookie("visited"):
+        return {
+            "visited": True,
+            "message": "Welcome again"
+        }
+    bottle.response.set_cookie("visited", "Yes")
+    return {
+        "visited": False,
+        "message": "Your first to visit"
+    }
 
 @app.route('/words')
 def word_spammer():
